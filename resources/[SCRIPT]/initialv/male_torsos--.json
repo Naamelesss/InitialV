@@ -1,0 +1,58 @@
+[
+    {
+        "_id": 1,
+        "Top": 1,
+        "Torso": 0,
+        "Undershirt": 15,
+        "Nom": "T-shirt Simple",
+        "Magasin": "Binco"
+    },
+    {
+        "_id": 2,
+        "Top": 3,
+        "Torso": 1,
+        "Undershirt": 0,
+        "Nom": "Haut de survêtement",
+        "Magasin": "Binco"
+    },
+    {
+        "_id": 3,
+        "Top": 3,
+        "Torso": 1,
+        "Undershirt": 1,
+        "Nom": "Veste de costume large",
+        "Magasin": "Binco"
+    },
+    {
+        "_id": 4,
+        "Top": 3,
+        "Torso": 1,
+        "Undershirt": 3,
+        "Nom": "Débardeur simple",
+        "Magasin": "Binco"
+    },
+    {
+        "_id": 5,
+        "Top": 3,
+        "Torso": 1,
+        "Undershirt": 4,
+        "Nom": "Débardeur couleur vif",
+        "Magasin": "Binco"
+    },
+    {
+        "_id": 6,
+        "Top": 3,
+        "Torso": 1,
+        "Undershirt": 8,
+        "Nom": "Débardeur avec motif",
+        "Magasin": "Binco"
+    },
+    {
+        "_id": 7,
+        "Top": 3,
+        "Torso": 1,
+        "Undershirt": 9,
+        "Nom": "Sweat a capuche ",
+        "Magasin": "Binco"
+    }
+]

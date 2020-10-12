@@ -1,0 +1,13 @@
+RegisterServerEvent('InitialCore:NotifPolice')
+AddEventHandler("InitialCore:NotifPolice", function(header, sub, msg, isappel, appelid, coords)
+   -- local PlayerIdentifier = GetPlayerIdentifier(source)
+    --MySQL.Async.fetchAll('SELECT Prenom, Nom FROM playerinfo WHERE SteamID = \'' .. PlayerIdentifier .. '\'', {}, function(result)
+      --  TriggerClientEvent('InitialCore:NotifPoliceC', -1, result[1].Prenom .. " " .. result[1].Nom, typenotif)
+    --end)
+    TriggerClientEvent('InitialCore:NotifPoliceC', -1, header, sub, msg, isappel, appelid, coords)
+end)
+
+RegisterServerEvent('InitialCore:RespondAppelPolice')
+AddEventHandler('InitialCore:RespondAppelPolice', function(appelid)
+    TriggerClientEvent('InitialCore:RespondAppelPoliceC', appelid)
+end)

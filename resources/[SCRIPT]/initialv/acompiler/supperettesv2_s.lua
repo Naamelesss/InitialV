@@ -1,0 +1,12 @@
+RegisterServerEvent('InitialCore:NotifAppelLTD')
+AddEventHandler("InitialCore:NotifAppelLTD", function()
+    TriggerClientEvent('InitialCore:NotifAppelLTDC', -1)
+end)
+
+RegisterServerEvent('InitialCore:AppelAcceptedLtd')
+AddEventHandler('InitialCore:AppelAcceptedLtd', function()
+    local PlayerIdentifier = GetPlayerIdentifier(source)
+    MySQL.Async.fetchAll('SELECT Prenom, Nom FROM playerinfo WHERE SteamID = \'' .. PlayerIdentifier .. '\'', {}, function(result)
+        TriggerClientEvent('InitialCore:AppelAcceptedLTDC', -1, result[1].Prenom .. " " .. result[1].Nom)
+    end)
+end)

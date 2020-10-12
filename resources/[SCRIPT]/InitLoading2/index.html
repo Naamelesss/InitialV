@@ -1,0 +1,42 @@
+<html>
+<link rel="stylesheet" type="text/css" href="1.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+</head>
+<body>    
+<div class="Shape"> 
+	<div style="height: 80%;width: 60%;margin-left: 7%;margin-top: 13%;">
+        <img src="gif.gif" height="65%">
+        <div class="ShapeStyle"></div>
+    </div>	
+</div>
+<div class="video-background">
+      <img src="img/loading.gif" height="120%">
+ </div>
+ </body>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-73378277-10'); </script>
+    <audio id="leson" src="music/music.ogg" autoplay="true" hidden="true" loop="true">
+	<script>
+
+    var play = false;
+    var myAudio = document.getElementById("leson");
+
+    myAudio.volume = 0.1;	
+	
+    function onKeyDown(event) {
+            switch (event.keyCode) {
+                case 32: //SpaceBar
+                    if (play) {
+                        myAudio.pause();
+                        play = false;
+                    } else {
+                        myAudio.play();
+                        play = true;
+                    }
+                    break;
+            }
+      return false;
+    }
+    window.addEventListener("keydown", onKeyDown, false);
+    </script>
+</body>
+</html>

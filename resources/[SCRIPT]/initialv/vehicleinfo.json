@@ -1,0 +1,16 @@
+[
+    {
+        "comet": {
+            "Type": "Sport",
+            "Vitesse": 150,
+            "PoidsCoffre": 50,
+            "Portes": 5
+        },
+        "etc": {
+            "Type": "etc",
+            "Vitesse": 2,
+            "PoidsCoffre": 2,
+            "Portes": 2
+        }
+    }
+]

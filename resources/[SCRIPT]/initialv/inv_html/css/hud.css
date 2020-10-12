@@ -1,0 +1,133 @@
+#main{
+    position: fixed;
+    top: 850px;
+    left: 1650px;
+}
+#divHeal{
+    margin-bottom: 15px;
+    transform: rotate(3deg);
+}
+#healStat{
+    border: 4px solid black;
+    border-radius: 5px;
+    height: 12px;
+    width: 200px;
+    z-index: 9;
+}
+#box{
+    background-color: rgb(107, 107, 107);
+    height: 14px;
+    margin-top: -1px;
+    z-index: 8;
+    width: 100%;
+}
+.co-1{
+    width: 2px;
+    height: 14px;
+    background-color: black;
+    margin-left: 25%;
+}
+.co-2{
+    width: 2px;
+    height: 14px;
+    background-color: black;
+    margin-left: 50%;
+    margin-top: -14px;
+}
+.co-3{
+    width: 2px;
+    height: 14px;
+    background-color: black;
+    margin-left: 75%;
+    margin-top: -14px;
+}
+.icon{
+    font-size: 19px;
+    margin-top: -19px;
+    margin-right: -25px;
+    float: right;
+    color: white;
+}
+
+.name1{
+    color: white;
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: 14px;
+    margin-left: 160px;
+}
+.name2{
+    color: white;
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: 14px;
+    margin-left: 150px;
+}
+.name3{
+    color: white;
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: 14px;
+    margin-left: 150px;
+}
+.name4{
+    color: white;
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: 14px;
+    margin-left: 130px;
+}
+#divHunger{
+    margin-bottom: 15px;
+    transform: rotate(3deg);
+}
+#hungerStat{
+    border: 4px solid black;
+    border-radius: 5px;
+    height: 12px;
+    width: 200px;
+    z-index: 9;
+}
+#hunger{
+    background-color: rgb(107, 107, 107);
+    height: 14px;
+    margin-top: -1px;
+    z-index: 8;
+    width: 100%;
+}
+#divWater{
+    margin-bottom: 15px;
+    transform: rotate(3deg);
+}
+#drunkWater{
+    border: 4px solid black;
+    border-radius: 5px;
+    height: 12px;
+    width: 200px;
+    z-index: 9;
+}
+#water{
+    background-color: rgb(107, 107, 107);
+    height: 14px;
+    margin-top: -1px;
+    z-index: 8;
+    width: 100%;
+}
+#divArmor{
+    margin-bottom: 15px;
+    transform: rotate(3deg);
+}
+#armorStat{
+    border: 4px solid black;
+    border-radius: 5px;
+    height: 12px;
+    width: 200px;
+    z-index: 9;
+}
+#boxArmor{
+    background-color: rgb(107, 107, 107);
+    height: 14px;
+    margin-top: -1px;
+    z-index: 8;
+    width: 100%;
+}

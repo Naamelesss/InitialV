@@ -1,0 +1,8 @@
+RegisterNetEvent('InitialCore:AdvancedNotif')
+AddEventHandler('InitialCore:AdvancedNotif', function(title, subtitle, msg, img1, img2)
+    print('CORE JOIN2')
+    SetNotificationTextEntry("STRING")
+    AddTextComponentSubstringPlayerName(msg)
+    SetNotificationMessage(img1, img2, true, 0, title, subtitle)
+    DrawNotification(false, true)
+end)

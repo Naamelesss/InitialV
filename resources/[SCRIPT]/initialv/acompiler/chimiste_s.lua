@@ -1,0 +1,6 @@
+RegisterServerEvent('InitialCore:GiveChimiste')
+AddEventHandler('InitialCore:GiveChimiste', function()
+    local SteamID = GetPlayerIdentifier(source)
+    MySQL.Async.execute("UPDATE playerinfo SET ChimisteLicense='true' WHERE SteamID='" .. SteamID .. "';", {}, function() 
+    end)
+end)

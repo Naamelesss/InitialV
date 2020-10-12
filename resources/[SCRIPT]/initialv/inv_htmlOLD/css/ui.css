@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap');
+
+*::selection {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-transform: uppercase;
+    color: white;
+    /*text-shadow:
+        -0.5px -0.5px 0 #000,
+        0.5px -0.5px 0 #000,
+        -0.5px 0.5px 0 #000,
+        0.5px 0.5px 0 #000;*/
+}
+
+.container {overflow:auto;}
+
+.ui {
+    position: relative;
+    left: 7.5vw;
+    top: 20vh;
+    width: 85vw;
+    height: 60vh;
+    border: 0.09vh solid rgba(80,80,80,0.5);
+    border-radius: 50px;
+    background-color: rgba(70, 70, 70, 0.315);
+	background-size: 200% 200%;
+    display: none;
+    z-index: 0;
+}
+
+.inventory {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1550px;
+    height: 500px;
+}
+#charName{
+	position:absolute;
+	top: 20%;
+	left: 37%;
+	text-align:center;
+}
+#playerInventory {
+    width: 625px;
+    height: 500px;
+    float: left;
+    overflow-y: auto;
+}
+#playerInventoryFastItems {
+    width: 370px;
+    height: 50px;
+	position : absolute;
+	bottom : -25%;
+	left:38%;
+	z-index: 100;
+	float:left;
+}
+#controls {
+    width: 300px;
+    height: 600px;
+    float: left;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#otherInventory {
+    text-align: center;
+    position: relative;
+    width: 625px;
+    height: 500px;
+    float: left;
+    overflow-y: auto;
+}
+
+#count {
+    border: none;
+	text-align: center;
+    font-size: 15px;
+	}
+.slotFast {
+    float: left;
+    width: 117px;
+    height: 117px;
+    background-color: rgba(50,50,50,0.2);
+    margin: 2px;
+    position: relative;
+	box-shadow: 0px -2.13vh 0px rgba(20,10,20,0.3) inset;
+}
+
+.slotFast:hover {
+    background-color: rgba(170,170,170,0.6);
+}
+.slot {
+    border-radius: 15px;
+	position: relative;
+	float: left;
+	width: 117px;
+    height: 117px;
+	text-align: center;
+	border: 0.09vh solid rgba(80,80,80,0.5);
+	background-color: rgba(50,50,50,0.2);
+	transition: all 0.2s ease;
+	margin: 0.09vh;
+	box-shadow: 0px -2.13vh 0px rgba(20,10,20,0.3) inset;
+}
+
+
+.slot:hover {
+    background-color: rgba(170,170,170,0.6);
+}
+
+.item,
+.item-other {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-position:  center center;
+    margin-top: 20px;
+    margin-left: 15px;
+	background-repeat: no-repeat;
+}
+.item-name-bg {
+    width: 100%;
+    width: 117px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+}
+.item-name {
+	text-align: center;
+	width: 10.2vh;
+	font-size: 0.93vh;
+	position: absolute;
+	margin-left: -13px;
+	bottom: 0.56vh;
+	color: white;
+	/*text-shadow: -0.09vh -0.09vh 0 #000, 0.09vh -0.09vh 0 #000, -0.09vh 0.09vh 0 #000, 0.09vh 0.09vh 0 #000;*/
+}
+.item-data {
+	text-align: center;
+	width: 10.2vh;
+	font-size: 0.93vh;
+	position: absolute;
+	margin-left: -13px;
+	bottom: -0.15vh;
+	color: white;
+	/*text-shadow: -0.09vh -0.09vh 0 #000, 0.09vh -0.09vh 0 #000, -0.09vh 0.09vh 0 #000, 0.09vh 0.09vh 0 #000;*/
+}
+.ui-draggable-dragging .item-name,
+.ui-draggable-dragging .item-count {
+    display: none;
+}
+.keybind {
+    position: absolute;
+    top: 0;
+	left:0;
+    width: 20px;
+    height: 20px;
+    z-index: 500;
+	color:rgb(2, 2, 3);
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+}
+.ui-draggable-dragging .keybind {
+    display: none;
+}
+.item-count {
+	position: absolute;
+	top: 0.28vh;
+	right: 0.46vh;
+	color: white;
+	font-size: 1.11vh;
+	text-align: center;
+	/*text-shadow: -0.09vh -0.09vh 0 #000, 0.09vh -0.09vh 0 #000, -0.09vh 0.09vh 0 #000, 0.09vh 0.09vh 0 #000;*/
+}
+
+.info-div {
+    text-align: center;
+    border: 0.09vh solid rgba(80,80,80,0.5);
+    padding: 5px;
+    background-color: rgba(77, 77, 77, 0.3);
+    border-radius: 50px;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.controls-div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.control {
+    border: 0.09vh solid rgba(80,80,80,0.5);
+    border-radius: 50px;
+	flex-grow: 1;
+	align-items: center;
+	text-align: center;
+	margin-top: 0.6vh;
+	font-weight: 0;
+	width: 100%;
+	height: 10%;
+	opacity: 1;
+	line-height: 4.63vh;
+	font-size: 16pt;
+	text-decoration: none;
+	background-color: rgba(77, 77, 77, 0.3);
+	color: rgba(220,220,220,1.0);
+	display: block;
+	float: none;
+    transition: all 0.2s ease;
+}
+
+.control.disabled {
+    background-color: rgba(17, 5, 17, 0.1);
+}
+
+.hoverControl {
+    background-color: rgba(220, 122, 122, 0.6);
+}
+
+.primaryInventoryName {
+	position: absolute;
+	left: 10.5%;
+	top: 20%;
+	font-size: 1.67vh;
+	color: white;
+	font-weight: bold;
+	/*text-shadow: -0.09vh -0.09vh 0 #000, 0.09vh -0.09vh 0 #000, -0.09vh 0.09vh 0 #000, 0.09vh 0.09vh 0 #000;*/
+}
+
+#playerInventory::-webkit-scrollbar,
+#otherInventory::-webkit-scrollbar {
+	margin-left: 500px;
+	width: 3.46px;
+	height: 2.16px;
+
+}
+
+#playerInventory::-webkit-scrollbar-thumb,
+#otherInventory::-webkit-scrollbar-thumb {
+		margin-left: 10px;
+	background: rgba(62, 62, 71, 0.7) !important;
+}
+
+
+
+
+
+
+.status {
+	padding: 1px;
+	margin: 0.3em;
+}
+
+.status_inner {
+    border-radius: 50px;
+	padding: 1px;
+}
+
+.status_val {
+    border-radius: 50px;
+    height : 1.0em;
+}

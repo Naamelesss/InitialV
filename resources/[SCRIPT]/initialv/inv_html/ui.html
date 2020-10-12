@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>InitInventory</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/config.js"></script>
+    <script src="locales/nl.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/inventory.js"></script>
+    <script src="js/hud.js"></script>
+    <script>
+        $(function() {
+            $("#dialog").dialog({
+                autoOpen: false,
+                clickOutside: true
+            });
+        });
+    </script>
+
+    <div class="ui">
+            <div class="inventory">
+                <div id="playerInventory"></div>
+                <div id="controls">
+                        <div class="info-div"></div>
+                        <div class="controls-div">
+                            
+                            <input style="font-size:16pt;height:40px;" type="number" class="control" id="count" value="1">
+                            <div class="control" id="use"></div>
+                            <div class="control" id="give"></div>
+                            <div class="control" id="drop"></div>
+
+                            <div id="status_list"></div>
+                        </div>
+                </div>
+            </div>
+
+            <div id="otherInventory">
+                <div id="noSecondInventoryMessage">
+                </div>
+            </div>
+            
+        
+            <!-- WEAPOND EMPLACEMENT -->
+            <div id="arme">
+                <div class="bottom"></div>
+                <div class="flex">
+                <div id="slotsarme"></div>
+                <div id="slotsarme"></div>
+                <div id="slotsarme"></div>
+                </div>
+            </div>
+
+            <!--<div class="potitiion">
+            <div class="bar health">
+                <div class="fapisition">
+                    
+                    <i class="fa fa-heartbeat"></i>
+                    <div class="esp"></div>
+                <div class="progress my-auto" style="width: 10%;float: left;">
+                  <div class="progress-bar bg-danger progress-health" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="10"></div>
+                </div>
+            </div>
+              </div>
+              <div class="bar armor">
+                <div class="fapisition">
+                <i class="fa fa-shield-alt"></i>
+                <div class="esp"></div>
+                <div class="progress my-auto" style="width: 10%;float: left;">
+                  <div class="progress-bar bg-white progress-armor" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="10"></div>
+                </div>
+                </div>
+              </div>
+              <div class="bar food">
+                <div class="fapisition">
+                <i class="fa fa-utensils"></i>
+                <div class="esp"></div>
+                <div class="progress my-auto" style="width: 10%;float: left;">
+                  <div class="bouffe progress-bar orange darken-2 progress-hunger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="10"></div>
+                </div>
+                </div>
+              </div>
+              <div class="bar water">
+                <div class="fapisition">
+                <i class="fa fa-burn"></i>
+                <div class="esp"></div>
+                <div class="progress my-auto" style="width: 10%;float: left;">
+                  <div class="progress-bar bg-primary progress-thirst" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="10"></div>
+                </div>
+              </div>
+              </div>
+            </div>-->
+    </div>
+</div>
+    
+
+    <div id="dialog">
+        <div id="nearPlayers">
+        </div>
+    </div>
+
+	
+
+</body>
+
+<script>
+    $(document).ready(function() {
+        $("#use").html(invLocale.useItem);
+        $("#give").html(invLocale.giveItem);
+        $("#drop").html(invLocale.dropItem);
+        $("#noSecondInventoryMessage").html(invLocale.secondInventoryNotAvailable);
+    });
+</script>
+
+</html>

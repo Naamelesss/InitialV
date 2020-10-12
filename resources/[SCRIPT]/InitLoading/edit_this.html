@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FiveM | Loadingscreen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="keks.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
+</head>
+<body  class="thunder">
+  
+    <section>
+      <h1 style="position: absolute;left: 6%;top: 7.5%;color: white;font-size: 1.75vw;font-family: 'Lucida Console';">Rejoins-nous sur discord : https://discord.gg/AryCkrH</h1>
+ 
+      <div class="important" style="background-image: url('https://cdn.discordapp.com/attachments/521799290134200341/530392375479107601/side-pic3.jpg');background-repeat: no-repeat;background-size: 100% 100%;width: 55.5%;height: 47.5%;position: absolute;left: 6%;top: 15%;">
+          <div style="background-image: url('');position: absolute;bottom: 45%; left: 49.5%;width: 10%;height: 10%;background-repeat: no-repeat;background-size: 50px 50px;filter: grayscale(100%);"></div>
+      </div>
+    
+    
+      <div class="info1" style="width: 13.5%;height: 19%;position: absolute;left: 6%;top: 64.5%;">
+          <img src="https://cdn.discordapp.com/attachments/521799290134200341/530378853453922314/shield-outline.png" style="position: absolute; left: 30%;top: 10%;width: 40%; height: 50%;filter:invert(100%);">
+          <h1 style="color: white;font-size: 1vw;font-family: 'Lucida Console'; text-align: center;margin-top: 55%;">Staff actif</h1>
+      </div>
+      
+      <div class="info1" style="width: 13.5%;height: 19%;position: absolute;left: 20%;top: 64.5%;">         
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/The_Last_of_Us_Fireflies_Logo.svg/1000px-The_Last_of_Us_Fireflies_Logo.svg.png" style="position: absolute; left: 30%;top: 10%;width: 40%; height: 50%;filter:invert(100%);">
+          <h1 style="color: white;font-size: 1vw;font-family: 'Lucida Console'; text-align: center;margin-top: 55%;">Whitelist</h1></div>
+      
+      <div class="info1" style="width: 13.5%;height: 19%;position: absolute;left: 34%;top: 64.5%;">         
+          <img src="http://simpleicon.com/wp-content/uploads/users.png" style="position: absolute; left: 30%;top: 0%;width: 40%; height: 72.5%;filter:invert(100%);">
+          <h1 style="color: white;font-size: 1vw;font-family: 'Lucida Console'; text-align: center;margin-top: 55%;">300 slots</h1></div>
+      
+      <div class="info1" style="width: 13.5%;height: 19%;position: absolute;left: 48%;top: 64.5%;">         
+          <img src="https://vignette.wikia.nocookie.net/galactic-warrior-empire-nexus/images/a/a9/300px-FiveMblack.png/revision/latest?cb=20190511202558" style="position: absolute; left: 30%;top: 10%;width: 40%; height: 55%;filter:invert(100%);">
+          <h1 style="color: white;font-size: 1vw;font-family: 'Lucida Console'; text-align: center;margin-top: 55%;">Roleplay</h1></div>
+    
+      <a href="javascript:void(0)" onmouseover="showInfo()" onmouseout="closeInfo()"><h1 style="position: absolute;left: 66.1%;top: 77%;color: white;font-size: 1.8vw;font-family: 'Lucida Console';"></h1></a>
+    
+      <a href="javascript:void(0)" onmouseover="showNotify()" onmouseout="closeNotify()" style="transition: 0.5s;"><h1 style="position: absolute;left: 66.1%;top: 11.75%;color: white;font-size: 1.8vw;font-family: 'Lucida Console';"></h1></a>
+    
+      <div id="not" style="position: absolute;top: 19%;left: 66.125%; background-color: rgba(0,0,0,0.2);width: 29%;border-radius: 10px;transition: 0.5s;height: 60%;opacity: 1;">
+          <div style="position: absolute;top:1%;left: 1%;background-color: rgba(36,36,36,0.75);width: 98%;height: 98%;background-image: url('https://cdn.discordapp.com/attachments/692498402377990196/714973784641241189/SPOILER_InitialV16.png'); background-size: 100% 100%;border-radius: 10px;"></div>
+      </div>
+    
+      <div id="info" style="position: absolute;top: 19%;left: 66.125%; background-color: rgba(0,0,0,0.2);width: 29%;border-radius: 10px;transition: 0.5s;height: 60%;opacity: 1;">
+          <div style="position: absolute;top:1%;left: 1%;background-color: rgba(36,36,36,0.75);width: 98%;height: 98%;background-image: url('https://cdn.discordapp.com/attachments/692498402377990196/714973784641241189/SPOILER_InitialV16.png'); background-size: 100% 100%;border-radius: 10px;"></div>
+      </div>
+        <h1 class="enable_music">Appuyez sur la barre espace pour couper la musique</h1>
+        <div class="stage"></div>
+    </section>
+  
+    
+
+    <audio id="leson" src="music/music.mp3" autoplay="true" hidden="true" loop="true"/>
+    <script>
+        
+
+    var play = false;
+    var myAudio = document.getElementById("leson");
+    
+    myAudio.volume = 0.1;
+    myAudio.currentTime = 50;
+
+    function onKeyDown(event) {
+            switch (event.keyCode) {
+                case 32: //SpaceBar                    
+                    if (play) {
+                        myAudio.pause();
+                        play = false;
+                    } else {
+                        myAudio.play();
+                        play = true;
+                    }
+                    break;
+            }
+      return false;
+    }
+
+    window.addEventListener("keydown", onKeyDown, false);
+    </script>
+ <script  src="script.js"></script>
+</body>
+</html>
