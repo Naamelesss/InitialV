@@ -1,7 +1,7 @@
 # InitialV
  InitialV Developped By Nameless & Flozii
 
- Vente interdit
+ Vente interdite
 
  Crée par :
  - Nameless#4846
