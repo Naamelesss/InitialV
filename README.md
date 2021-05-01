@@ -1,10 +1,11 @@
 # InitialV
 
 Base FiveM développé intégralement à la main non terminée !
+Les menus utilisés sont [RageUI](https://github.com/iTexZoz/RageUI)
 
- InitialV Developped By Nameless & Flozii
+InitialV Developped By Nameless & Flozii
 
-## Vente interdite
+## Revente et réappropriation interdite
 
  Crée par :
  - Nameless#4846
@@ -12,3 +13,5 @@ Base FiveM développé intégralement à la main non terminée !
 
 # Nouveau projet
  [SunWise](https://discord.gg/K5tKtXpg7P) (PVP)
+
+## La base InitialV ne serra pas fini, ni éditée, ni améliorée ! Nous acceptons en revanche les PR
