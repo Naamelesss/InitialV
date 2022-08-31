@@ -8,7 +8,7 @@ InitialV Developped By Nameless & Flozii
 ## Revente et réappropriation interdite
 
  Crée par :
- - Nameless#4846
+ - Nameless_#0014
  - Flozii#0502
 
 # Nouveau projet
